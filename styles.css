@@ -56,7 +56,6 @@ a:hover {
 }
 
 header {
-  text-align: center;
   background: url('images/boston.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
@@ -70,28 +69,34 @@ header .profile-image {
   width: 150px;
   height: 200px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 2px solid #5ce5ce;
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.5) rotate(360deg);
 }
+
+section {
+  margin: 30px;
+}
+
 .tag {
-  background-color: #efefef;
-  color: black;
+  text-shadow: 2px 2px 4px #000;
+  color: white;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 }
 .location {
-  background-color: #222;
-  color: yellow;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+  font-weight: 600;
 }
 .card {
   margin:  15px;
   padding: 20px 40px 40px;
-  max-width: 30%;
+  width: 40%;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -99,7 +104,53 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
+.bio-card {
+  margin: auto;
+  padding: 20px 40px 40px;
+  max-width: 75%;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.row-card {
+  padding: 20px 40px 40px;
+  max-width: 75%;
+  text-align: left;
+  background: #fff;
+  margin: 20px 0;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.row-card:nth-child(odd) {
+  margin-left: 15%;
+  margin-right: 25%;
+  border-bottom: 4px solid #ccc;
+  border-left: 4px solid #ccc;
+}
+
+.row-card:nth-child(even) {
+  margin-left: 25%;
+  margin-right: 15%;
+
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+}
+
 .card:hover {
+  border-color: #5ce5ce;
+}
+
+.row-card:hover {
+  border-color: #5ce5ce;
+}
+
+.bio-card:hover {
   border-color: #5ce5ce;
 }
 
@@ -121,14 +172,19 @@ ul.skills {
   background: #0399ff;
 }
 
+ul.skills_1 {
+  padding: 0;
+  text-align: center;
+}
 .skills_1 li {
   border-radius: 6px;
   display: inline-block;
   background: #ff9904;
   color: white;
   padding: 5px 5px;
-  margin: 2px;
+  margin: auto;
 }
+
 
 .skills_1 li:nth-child(even) {
   background: #0399ff;
@@ -225,6 +281,3 @@ a.social:hover {
  .resume_header {
    color: white;
  }
-
-
-}
