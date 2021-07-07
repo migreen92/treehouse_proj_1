@@ -23,15 +23,15 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
+nav {
   width: 100%;
   background: black;
   min-height: 30px;
-  padding: 10px;
+  padding: 10px 50px;
   position: fixed;
   text-align: center;
 }
-.nav {
+.main-nav {
   display: flex;
   justify-content: space-around;
   font-weight: 700;
@@ -40,18 +40,18 @@ a:hover {
   padding: 0;
 }
 
-.nav .name {
+.main-nav .name {
     display: block;
     margin-right: auto;
     color: white;
 }
-.nav li {
+.main-nav li {
   padding: 5px 10px 10px 10px;
 }
-.nav a {
+.main-nav a {
   transition: all .5s;
 }
-.nav a:hover {
+.main-nav a:hover {
   color: white
 }
 
@@ -97,7 +97,7 @@ header .profile-image:hover {
   background-color: #222;
   color: #5ce5ce;
 }
-.card {
+section {
   margin:  15px;
   padding: 20px 40px 40px;
   width: 40%;
@@ -108,7 +108,8 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
+
+section:hover {
   border-color: #5ce5ce;
 }
 
