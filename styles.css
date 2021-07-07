@@ -59,6 +59,11 @@ section {
   margin: 30px;
 }
 
+figcaption{
+  text-align: center;
+  font-style: italic;
+}
+
 header {
   text-align: center;
   background: url('images/boston.jpg') no-repeat top center ;
@@ -90,7 +95,7 @@ header .profile-image:hover {
 }
 .location {
   background-color: #222;
-  color: yellow;
+  color: #5ce5ce;
 }
 .card {
   margin:  15px;
@@ -105,6 +110,47 @@ header .profile-image:hover {
 }
 .card:hover {
   border-color: #5ce5ce;
+}
+
+.media-row-card {
+  padding: 20px 40px 40px;
+  text-align: left;
+  margin: 20px 0;
+  border-radius: 6px;
+  transition: all .5s;
+  display: flex;
+  align-items:center;
+
+}
+
+.media-row-card.row-card-image:nth-child(2n) {
+  order: 1;
+}
+.row-card-text {
+ flex-direction: column;
+ margin: 3rem 0;
+ background: #fff;
+ border-radius: 6px;
+ padding: 4rem 2rem;
+}
+
+.row-card-text:nth-child(odd) {
+  border-bottom: 4px solid #ccc;
+  border-left: 4px solid #ccc;
+}
+
+.row-card-text:nth-child(even) {
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+}
+
+.row-card-text:hover {
+  border-color: #5ce5ce;
+}
+
+.image-card {
+  max-width: 600px;
+  border-radius: 5%;
 }
 
 .bio-card {
