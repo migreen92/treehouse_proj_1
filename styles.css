@@ -69,13 +69,11 @@ header {
   background: url('images/boston.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
-}
-header {
-  line-height: 1.5;
+  margin-bottom: 3rem;
+line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 80px;
   width: 150px;
   height: 200px;
   border-radius: 50%;
@@ -97,26 +95,34 @@ header .profile-image:hover {
   background-color: #222;
   color: #5ce5ce;
 }
-section {
+
+
+section:hover {
+  border-color: #5ce5ce;
+}
+
+
+.body {
   margin:  15px;
   padding: 20px 40px 40px;
-  width: 40%;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-right: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+  display: inline-block;
+  min-width: 300px;
 }
 
-section:hover {
-  border-color: #5ce5ce;
+.flex .body {
+  width:40%;
 }
 
 .media-row-card {
   padding: 20px 40px;
   text-align: left;
-  margin: 20px 0;
+  margin: 40px 0;
   border-radius: 6px;
   transition: all .5s;
   display: flex;
@@ -124,25 +130,28 @@ section:hover {
 
 }
 
-.media-row-card.row-card-image:nth-child(2n) {
-  order: 1;
-}
+
 .row-card-text {
  flex-direction: column;
  margin: 3rem 0;
  background: #fff;
  border-radius: 6px;
  padding: 4rem 2rem;
+ min-width: 350px;
 }
 
 .row-card-text:nth-child(odd) {
   border-bottom: 4px solid #ccc;
   border-left: 4px solid #ccc;
+  margin: 0 -3em 0 2.5em;
+  z-index: -1;
 }
 
 .row-card-text:nth-child(even) {
   border-bottom: 4px solid #ccc;
   border-right: 4px solid #ccc;
+  margin: 0 2.5em 0 -3em;
+  z-index: -1;
 }
 
 .row-card-text:hover {
@@ -151,14 +160,15 @@ section:hover {
 
 .image-card {
   width: 600px;
-  height: 450px;
+  height: 400px;
   border-radius: 5%;
+
 }
 
 .bio-card {
   margin: auto;
   padding: 20px 40px 40px;
-  max-width: 75%;
+  max-width: 1200px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -166,6 +176,8 @@ section:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
+
 
 .row-card {
   padding: 20px 40px 40px;
@@ -175,6 +187,7 @@ section:hover {
   margin: 20px 0;
   border-radius: 6px;
   transition: all .5s;
+  display: block;
 }
 
 .row-card:nth-child(odd) {
