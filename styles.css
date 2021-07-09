@@ -83,6 +83,7 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.5) rotate(360deg);
 }
+
 .tag {
   text-shadow: 2px 2px 4px #000;
   color: white;
@@ -100,6 +101,7 @@ header .profile-image:hover {
 section:hover {
   border-color: #5ce5ce;
 }
+
 
 
 .body {
@@ -122,7 +124,6 @@ section:hover {
 .media-row-card {
   padding: 20px 40px;
   text-align: left;
-  margin: 40px 0;
   border-radius: 6px;
   transition: all .5s;
   display: flex;
@@ -130,39 +131,43 @@ section:hover {
 
 }
 
+.row-card-image {
+  z-index: -1;
+}
 
 .row-card-text {
  flex-direction: column;
  margin: 3rem 0;
  background: #fff;
  border-radius: 6px;
- padding: 4rem 2rem;
+ padding: 3rem 2rem;
  min-width: 350px;
 }
 
 .row-card-text:nth-child(odd) {
   border-bottom: 4px solid #ccc;
   border-left: 4px solid #ccc;
-  margin: 0 -3em 0 2.5em;
-  z-index: -1;
+  margin: 0 -4rem 0 2.5em;
+  padding: 2.5rem 4rem;
+
 }
 
 .row-card-text:nth-child(even) {
   border-bottom: 4px solid #ccc;
   border-right: 4px solid #ccc;
-  margin: 0 2.5em 0 -3em;
-  z-index: -1;
+  margin: 0 2.5em 0 -4em;
+  padding: 2.5rem 4rem;
+
 }
 
 .row-card-text:hover {
-  border-color: #5ce5ce;
+    border-color: #5ce5ce;
 }
 
 .image-card {
   width: 600px;
   height: 400px;
   border-radius: 5%;
-
 }
 
 .bio-card {
@@ -176,7 +181,6 @@ section:hover {
   border-radius: 6px;
   transition: all .5s;
 }
-
 
 
 .row-card {
@@ -200,7 +204,6 @@ section:hover {
 .row-card:nth-child(even) {
   margin-left: 25%;
   margin-right: 15%;
-
   border-bottom: 4px solid #ccc;
   border-right: 4px solid #ccc;
 }
